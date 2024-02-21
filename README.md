@@ -33,7 +33,7 @@
 
 ## Work flow
 <div align="center">
-    <img src="asset/workflow.png" height="540"/>
+    <img src="asset/workflow.png" height="320"/>
 </div>
 
 > The workflow is developed based on Snakemake, which comprises several interdependent parts. For instance, when comparing genomes, it is necessary to manually modify the corresponding configuration files.
