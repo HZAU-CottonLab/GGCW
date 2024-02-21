@@ -33,7 +33,7 @@
 
 ## Work flow
 <div align="center">
-    <a href="https://memotrace.cn/"><img src="asset/workflow.png" height="240"/></a>
+    <img src="asset/workflow.png" height="540"/>
 </div>
 
 > The workflow is developed based on Snakemake, which comprises several interdependent parts. For instance, when comparing genomes, it is necessary to manually modify the corresponding configuration files.
