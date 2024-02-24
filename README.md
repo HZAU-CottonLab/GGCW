@@ -3,14 +3,11 @@
     <a href="https://github.com/HZAU-CottonLab/GGCW/stargazers">
         <img src="https://img.shields.io/github/stars/HZAU-CottonLab/GGCW.svg" />
     </a>
-    <a href="https://memotrace.cn/" target="_blank">
+    <a href="https://github.com/HZAU-CottonLab/GGCW/fork" target="_blank">
         <img alt="GitHub forks" src="https://img.shields.io/github/forks/HZAU-CottonLab/GGCW?color=eb6ea5">
     </a>
-    <a href="https://memotrace.cn/" target="_blank">
+    <a href="https://cloud.sylabs.io/library/zpliu/bioinfomatic/ggcw" target="_blank">
         <img src="https://img.shields.io/badge/container-singularity-green" />
-    </a>
-    <a href="https://memotrace.cn/" target="_blank">
-        <img src="https://img.shields.io/github/license/HZAU-CottonLab/GGCW" />
     </a>
     <a href="https://github.com/HZAU-CottonLab/GGCW/releases" target="_blank">
         <img alt="GitHub release (with filter)" src="https://img.shields.io/github/v/release/HZAU-CottonLab/GGCW">
