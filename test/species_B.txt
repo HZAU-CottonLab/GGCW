@@ -1,0 +1,15 @@
+HC04 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/HC04-softmasked.fa
+TW007 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/TW007-softmasked.fa
+TW029 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/TW029-softmasked.fa
+TW064 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/TW064-softmasked.fa
+TW091 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/TW091-softmasked.fa
+TW134 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/TW134-softmasked.fa
+ZY006 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/ZY006-softmasked.fa
+ZY236 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/ZY236-softmasked.fa
+ZY381 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/ZY381-softmasked.fa
+HC15 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/HC15-softmasked.fa
+HW06 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/HW06-softmasked.fa
+P02 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/P02-softmasked.fa
+P20 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/P20-softmasked.fa
+HW05 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/HW05-softmasked.fa
+P19 file:/data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/P19-softmasked.fa

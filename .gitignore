@@ -1,0 +1,10 @@
+.snakemake
+.toil
+workflow/scripts/util/__pycache__/
+workflow/scripts/util/__init__.pyc
+GGCW/
+GGCW.sif
+dag.pdf
+results/*
+test/GeneSet/*
+test/src_genome_data/*

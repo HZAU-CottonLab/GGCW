@@ -1,0 +1,4 @@
+(HC04:0.00933,J85:0.01048,kirkii:0.10269);
+HC04 /data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/HC04-softmasked.fa
+J85 /data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/J85-softmasked.fa
+kirkii /data/zpliu/Graph_genome_comparison_workflow/results/maskedGenome/kirkii-softmasked.fa

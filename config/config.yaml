@@ -1,0 +1,16 @@
+#* configfile that specific raw genome and repeat region
+rawGenomeConfig: "test/raw_genome.config"
+rawDataPath: "/data/zpliu/Graph_genome_comparison_workflow/test/src_genome_data"
+
+#* configure for mashTree
+mashTreeConfig: "test/mashTree.config"
+
+#* progressive cactus config
+progressiveConfig: 'test/evolution.txt'
+
+
+#* halSynteny between species A and species B
+queryGenome: "J85"
+targetGenome: "HC04"
+
+

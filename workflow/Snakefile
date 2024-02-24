@@ -1,0 +1,61 @@
+import glob
+import re 
+from snakemake.utils import min_version
+from snakemake.utils import validate
+
+min_version("7.25.0")
+
+#? input file and parameter configure
+configfile: "config/config.yaml"
+
+#? global container image
+singularity: "library://zpliu/bioinfomatic/ggcw:v1.0"
+
+
+include: "rules/genomeMasked.smk"
+include: "rules/mashTree.smk"
+include: "rules/progressive.smk"
+include: "rules/minigraph.smk"
+include: "rules/windowAnnotate.smk"
+include: "rules/window_liftover.smk"
+include: "rules/syntelogGene.smk"
+#* target rule 
+
+
+rawGenomeConfigFile=config['rawGenomeConfig']
+accessionList=[]
+with open(rawGenomeConfigFile,'r') as File:
+    for line in File:
+        if re.match("^#",line):
+            pass 
+        else:
+            accessionList.append(
+                line.strip("\n")
+            )
+
+accession_withoutOutgroup=accessionList[1:]
+
+rule all:
+    input:
+        maskedGenome=expand('results/maskedGenome/{accession}-softmasked.fa',accession=accessionList),
+        mashTree='results/mashTree/topology.tree',
+        progressive_hal='results/progressive_cactus/evolution.hal',
+        minigraph_hal=expand(
+            'results/minigraph_cactus/{species}/{species}.full.hal',
+            species=['species_A','species_B']
+        ),
+        pslFilePath="results/progressive_cactus/{}-{}.psl".format(config['queryGenome'],config['targetGenome']),
+        all_Block='results/AlignmentBlock/{}-{}_SYN_HYD.txt'.format(config['queryGenome'],config['targetGenome']),
+        #* window liftover 
+        window_liftover=expand(
+            'results/window_liftover/{species}_liftover.txt',
+            species=['species_A','species_B']
+        ),
+        all_window_liftover='results/AlignmentBlock/All_sample_SYN_HYD.txt',
+        #* gene bed annotated
+        geneBed=expand('results/GeneSet/geneBed/{sample}_ortholog.bed',sample=accession_withoutOutgroup),
+        #* syntelog Gene in each species
+        syntelog_genes=expand(
+            'results/GeneSet/{species}_syntelog.txt',
+            species=['species_A','species_B']
+        )

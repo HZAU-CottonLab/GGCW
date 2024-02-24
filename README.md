@@ -74,15 +74,28 @@
 
 ## Install
 
+### Used in container 
 ```bash
+#* pull the container
+singularity push GGCW.sif library://zpliu/bioinfomatic/ggcw:v1.0
 
+#* pull the Snakemake pipline
 ```
 
 
 ## Usage example
 
-```bash
+> test Data download </br>
+> `wget https://zenodo.org/api/records/10697234/files-archive`
+> + `example_data.tar.gz`  example test data 
+> + `example_result.tar.gz` result for example data 
 
+```bash
+#* pull container
+singularity push GGCW.sif library://zpliu/bioinfomatic/ggcw:v1.0
+#TODO run snakemake
+#* show pipline
+singularity exec GGCW.sif snakemake --cores 1 -np 
 ```
 
 
