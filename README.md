@@ -60,16 +60,16 @@
 
 ## Requirements
 
-- Python
-    - pandas
-    - pysam
-    - pybedtools
-- Perl
-- Snakemake
-- Cactus
-- mashtree
-- quicktree
-- seqtk
+- Python (v3.10.12)
+    - pandas (v2.2.0)
+    - pysam (v0.22.0)
+    - pybedtools (v0.9.1)
+- Perl (v5.34.0)
+- Snakemake (7.25.0)
+- Cactus (6.0.0)
+- mashtree (v1.4.6)
+- quicktree (v2.5)
+- seqtk (v1.4-r122)
 
 
 ## Install
