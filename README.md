@@ -77,9 +77,10 @@
 ### Used in container 
 ```bash
 #* pull the container
-singularity push GGCW.sif library://zpliu/bioinfomatic/ggcw:v1.0
+singularity pull GGCW.sif library://zpliu/bioinfomatic/ggcw:v1.0
 
 #* pull the Snakemake pipline
+wget -c https://github.com/HZAU-CottonLab/GGCW/archive/refs/tags/v1.0.tar.gz
 ```
 
 
@@ -92,7 +93,7 @@ singularity push GGCW.sif library://zpliu/bioinfomatic/ggcw:v1.0
 
 ```bash
 #* pull container
-singularity push GGCW.sif library://zpliu/bioinfomatic/ggcw:v1.0
+singularity pull GGCW.sif library://zpliu/bioinfomatic/ggcw:v1.0
 #TODO run snakemake
 #* show pipline
 singularity exec GGCW.sif snakemake --cores 1 -np 
